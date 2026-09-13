@@ -2398,7 +2398,8 @@ console.log('✅ UniUber v17 — World\'s Most Premium Uniform Platform Loaded')
 (function initSplash() {
   var splash = document.getElementById('v18-splash');
   if (!splash) return;
-  setTimeout(function() { splash.classList.add('hidden'); }, 1800);
+  setTimeout(function() { splash.classList.add('hidden'); }, 1200);
+  splash.addEventListener('click', function(){ splash.classList.add('hidden'); });
 })();
 
 /* ── ROLE CONFIG ── */
